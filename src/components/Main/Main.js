@@ -1,20 +1,11 @@
 import React from 'react';
+import Promo from "../Promo/Promo";
 import './Main.css';
 
 function Main() {
   return (
-    <main className="content">
-      <p>
-        Main
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
+    <main className="main">
+      <Promo />
     </main>
   );
 }
