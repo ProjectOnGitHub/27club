@@ -4,7 +4,7 @@
     "header"
     "main"
     "footer";
-  grid-template-rows: 3fr;
+  grid-template-columns: 1fr;
   justify-items: center;
   box-sizing: border-box;
   width: 100%;
@@ -14,7 +14,7 @@
   color: var(--color-light);
   align-items: center;
   font: normal 14px/20px "Oswald", Arial, sans-serif;
-
+  line-height: 1;
   -webkit-text-size-adjust: auto;
   -ms-text-size-adjust: auto;
   -moz-text-size-adjust: auto;
