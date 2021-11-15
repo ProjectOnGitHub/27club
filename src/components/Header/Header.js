@@ -11,13 +11,13 @@ function Header() {
         </a>
         <ul className="header__menu">
           <li className="header__menu-item">
-            <a href="/#about" className="header__menu-link hover-effect">
-              О клубе
+            <a href="/#members" className="header__menu-link hover-effect">
+              Участники
             </a>
           </li>
           <li className="header__menu-item">
-            <a href="/#members" className="header__menu-link hover-effect">
-              Участники
+            <a href="/#about" className="header__menu-link hover-effect">
+              О клубе
             </a>
           </li>
         </ul>

@@ -8,8 +8,8 @@ function Main() {
   return (
     <main className="main">
       <Promo />
-      <About />
       <Members />
+      <About />
     </main>
   );
 }
