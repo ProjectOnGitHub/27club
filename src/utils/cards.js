@@ -1,30 +1,51 @@
+
+import robertJohnson from '../../src/images/robert-johnson.jpg';
+import jimiHendrix from '../../src/images/jimi-hendrix.jpg';
+import jimMorrison from '../../src/images/jim-morrison.jpg';
+import janisJoplin from '../../src/images/janis-joplin.jpg';
+import brianJones from '../../src/images/brian-jones.jpg';
+import kurtCobain from '../../src/images/kurt-cobain.jpg';
+import amyWinehouse from '../../src/images/amy-winehouse.jpg';
+
 export const initialCards = [
   {
     name: 'Роберт Джонсон',
-    link: 'https://images.unsplash.com/photo-1543722530-d2c3201371e7'
+    link: robertJohnson,
+    dates: '08.05.1911 — 16.08.1938',
   },
   {
     name: 'Джими Хендрикс',
-    link: 'https://images.unsplash.com/photo-1509647648544-a3e09b751ad6'
+    link: jimiHendrix,
+    dates: '27.11.1942 — 18.09.1970',
   },
   {
     name: 'Джим Моррисон',
-    link: 'https://images.unsplash.com/photo-1560740583-0664e57560e4'
+    link: jimMorrison,
+    dates: '08.12.1943 — 03.07.1971',
   },
   {
     name: 'Дженис Джоплин',
-    link: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa'
+    link: janisJoplin,
+    dates: '08.05.1911 — 16.08.1938',
   },
   {
     name: 'Брайан Джонс',
-    link: 'https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99'
+    link: brianJones,
+    dates: '08.05.1911 — 16.08.1938',
   },
   {
     name: 'Курт Кобейн',
-    link: 'https://images.unsplash.com/photo-1575881875475-31023242e3f9'
+    link: kurtCobain,
+    dates: '08.05.1911 — 16.08.1938',
   },
   {
     name: 'Эми Уайнхаус',
-    link: 'https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99'
+    link: amyWinehouse,
+    dates: '08.05.1911 — 16.08.1938',
+  },
+  {
+    name: 'Вакансия',
+    link: 'https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99',
+    dates: '00.00.0000 — 00.00.0000',
   },
 ];

@@ -4,17 +4,9 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <p>
-        Footer
+      <p className="footer__copyright">
+        2021 © A V
       </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
     </footer>
   );
 }
