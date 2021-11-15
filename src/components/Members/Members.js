@@ -7,10 +7,11 @@ function Members() {
   return (
     <section className="members" id="members">
       <ul className="members-cards__list">
-        {initialCards.map(({ link, name }) => (
+        {initialCards.map(({ link, name, dates }) => (
           <li className="members-cards__list-item" key={name}>
             <h3 className="members-cards__title">{name}</h3>
             <img className="members-cards__image" src={link} alt={name} />
+            <h4 className="members-cards__subtitle card_hovered">{dates}</h4>
           </li>
         ))}
       </ul>

@@ -9,7 +9,6 @@
 }
 
 .members__title {
-  width: 100%;
   text-transform: uppercase;
   text-align: center;
   font-size: 200px;
@@ -37,13 +36,26 @@
   align-items: center;
   position: relative;
   justify-content: center;
-  filter: grayscale(100%);
+  transition: 1s;
+  filter: none;
 }
 
 .members-cards__title {
   position: absolute;
   z-index: 1;
   font-size: 45px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.card_hovered {
+  visibility: hidden;
+}
+
+.members-cards__subtitle {
+  position: absolute;
+  z-index: 1;
+  font-size: 30px;
   font-weight: normal;
   margin: 0;
 }
@@ -56,5 +68,6 @@
 }
 
 .members-cards__list-item:hover {
-  filter: none;
+  filter: grayscale(100%);
+  transition: 1s;
 }
