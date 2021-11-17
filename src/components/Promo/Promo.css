@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   background-color: var(--color-dark);
+  max-height: 600px;
   height: 100%;
-  min-height: 600px;
   width: 100%;
 }
 
@@ -23,8 +23,28 @@
 }
 
 .promo__logo {
-  max-width: 500px;
+  max-height: 500px;
   object-fit: contain;
+  position: relative;
   width: 100%;
   opacity: 0.03;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .promo__title {
+    font-size: 150px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .promo__title {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .promo__title {
+    font-size: 75px;
+  }
 }

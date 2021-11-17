@@ -4,10 +4,10 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <p className="footer__copyright">
+      <div className="footer__copyright  section">
         2021 © A V
-      </p>
-    </footer>
+      </div>
+    </footer >
   );
 }
 

@@ -30,3 +30,37 @@
 .hover-effect:hover {
   opacity: 0.5;
 }
+
+.section {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .section {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

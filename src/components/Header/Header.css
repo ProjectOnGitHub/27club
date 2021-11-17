@@ -10,13 +10,10 @@
 }
 
 .header__navigation {
-  width: 100%;
-  max-width: 1140px;
+  padding: 0 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 70px;
-  margin: 0;
 }
 
 .header__logo {

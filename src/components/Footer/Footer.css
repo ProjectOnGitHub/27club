@@ -2,11 +2,15 @@
   grid-area: footer;
   color: var(--color-dark);
   width: 100%;
+  margin: 0;
   height: 100px;
   display: flex;
-  justify-content: right;
-  align-items: end;
-  margin: 0 15px 15px 0;
-  padding: 0;
+  justify-content: center;
+  align-items: center;
   background-color: var(--color-light);
+}
+
+.footer__copyright {
+  padding: 0 70px;
+  text-align: right;
 }

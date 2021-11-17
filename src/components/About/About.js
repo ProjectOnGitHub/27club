@@ -4,7 +4,7 @@ import './About.css';
 function About() {
   return (
     <section className="about">
-      <article className="about__info" id="about">
+      <article className="about__info section" id="about">
         <h2 className="about__title">О клубе</h2>
         <p className="about__text">
           Объединённое название влиятельных музыкантов, умерших

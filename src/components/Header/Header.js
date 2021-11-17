@@ -5,7 +5,7 @@ import './Header.css';
 function Header() {
   return (
     <header className="header">
-      <nav className="header__navigation">
+      <nav className="header__navigation section">
         <a href="/" className="header__link hover-effect">
           <img className="header__logo" alt="Логотип" src={headerLogo} />
         </a>
