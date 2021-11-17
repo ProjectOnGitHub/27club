@@ -1,21 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Card.css';
 
 // eslint-disable-next-line react/prop-types
-function Card({ card, onMouseEnter, onMouseLeave, hoverCard, name, dates, link }) {
+function Card({ card, name, dates, link }) {
+  const [hoverCard, setHoverCard] = useState(false);
 
-  function handleEnter(e) {
-    e.stopPropagation();
-    onMouseEnter(card);
+  function handleMouseEnter() {
+    setHoverCard(true);
+  }
+
+  function handleMouseLeave() {
+    setHoverCard(false);
+  }
+
+  function handleEnter() {
+    handleMouseEnter(card, hoverCard);
     console.log(card);
   }
 
-  function handleLeave(e) {
-    e.stopPropagation();
-    onMouseLeave(card);
+  function handleLeave() {
+    handleMouseLeave(card);
     console.log(card);
-
   }
+
 
   return (
     <li className="members-cards__list-item" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>

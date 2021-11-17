@@ -6,7 +6,6 @@ import Card from '../Card/Card';
 function Members() {
 
   const [cards, setCards] = useState([]);
-  const [hoverCard, setHoverCard] = useState(false);
 
   useEffect(() => {
     const data = initialCards.map((item) => {
@@ -21,13 +20,7 @@ function Members() {
     setCards(data);
   }, []);
 
-  function handleMouseEnter() {
-    setHoverCard(true);
-  }
 
-  function handleMouseLeave() {
-    setHoverCard(false);
-  }
 
   return (
     <section className="members" id="members">
@@ -40,9 +33,6 @@ function Members() {
               link={card.link}
               dates={card.dates}
               card={card}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              hoverCard={hoverCard}
             />
           )
         })}
