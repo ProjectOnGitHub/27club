@@ -48,10 +48,6 @@
   margin: 0;
 }
 
-.card_hovered {
-  visibility: hidden;
-}
-
 .members-cards__subtitle {
   position: absolute;
   z-index: 1;

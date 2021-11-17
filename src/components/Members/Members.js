@@ -8,11 +8,10 @@ function Members() {
 
   function handleMouseEnter() {
     setHoverCard(true);
-    console.log("Навел");
   }
+
   function handleMouseLeave() {
-    setHoverCard(true);
-    console.log("Убрал");
+    setHoverCard(false);
   }
 
   return (
