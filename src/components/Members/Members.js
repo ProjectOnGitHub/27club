@@ -1,21 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Members.css';
-import { initialCards } from "../../utils/cards";
+import Card from '../Card/Card';
 
 function Members() {
+
+  const [hoverCard, setHoverCard] = useState(false);
+
+  function handleMouseEnter() {
+    setHoverCard(true);
+    console.log("Навел");
+  }
+  function handleMouseLeave() {
+    setHoverCard(true);
+    console.log("Убрал");
+  }
 
   return (
     <section className="members" id="members">
       <ul className="members-cards__list">
-        {initialCards.map(({ link, name, dates }) => (
-          <li className="members-cards__list-item" key={name}>
-            <h3 className="members-cards__title">{name}</h3>
-            <img className="members-cards__image" src={link} alt={name} />
-            <h4 className="members-cards__subtitle card_hovered">{dates}</h4>
-          </li>
-        ))}
+        <Card
+          handleMouseEnter={handleMouseEnter}
+          handleMouseLeave={handleMouseLeave}
+          hoverCard={hoverCard}
+        />
       </ul>
-    </section>
+    </section >
   );
 }
 
