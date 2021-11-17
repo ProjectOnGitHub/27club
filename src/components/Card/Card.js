@@ -15,12 +15,10 @@ function Card({ card, name, dates, link }) {
 
   function handleEnter() {
     handleMouseEnter(card, hoverCard);
-    console.log(card);
   }
 
   function handleLeave() {
     handleMouseLeave(card);
-    console.log(card);
   }
 
 

@@ -16,39 +16,40 @@ export const initialCards = [
   },
   {
     id: 2,
+    name: 'Брайан Джонс',
+    link: brianJones,
+    dates: '28.02.1942 — 03.06.1970',
+  },
+  {
+    id: 3,
     name: 'Джими Хендрикс',
     link: jimiHendrix,
     dates: '27.11.1942 — 18.09.1970',
   },
   {
-    id: 3,
+    id: 4,
+    name: 'Дженис Джоплин',
+    link: janisJoplin,
+    dates: '19.01.1943 — 04.10.1970',
+  },
+  {
+    id: 5,
     name: 'Джим Моррисон',
     link: jimMorrison,
     dates: '08.12.1943 — 03.07.1971',
   },
-  {
-    id: 4,
-    name: 'Дженис Джоплин',
-    link: janisJoplin,
-    dates: '08.05.1911 — 16.08.1938',
-  },
-  {
-    id: 5,
-    name: 'Брайан Джонс',
-    link: brianJones,
-    dates: '08.05.1911 — 16.08.1938',
-  },
+
   {
     id: 6,
     name: 'Курт Кобейн',
     link: kurtCobain,
-    dates: '08.05.1911 — 16.08.1938',
+    dates: '20.02.1967 — 05.04.1994',
   },
   {
     id: 7,
     name: 'Эми Уайнхаус',
     link: amyWinehouse,
-    dates: '08.05.1911 — 16.08.1938',
+    dates: '14.09.1983 — 23.07.2011',
   },
   {
     id: 8,
