@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/27club/static/css/main.56ec0715.chunk.css",
-    "main.js": "/27club/static/js/main.c1c30d56.chunk.js",
-    "main.js.map": "/27club/static/js/main.c1c30d56.chunk.js.map",
+    "main.js": "/27club/static/js/main.669f58d0.chunk.js",
+    "main.js.map": "/27club/static/js/main.669f58d0.chunk.js.map",
     "runtime-main.js": "/27club/static/js/runtime-main.a8918f10.js",
     "runtime-main.js.map": "/27club/static/js/runtime-main.a8918f10.js.map",
-    "static/js/2.c5ea1dde.chunk.js": "/27club/static/js/2.c5ea1dde.chunk.js",
-    "static/js/2.c5ea1dde.chunk.js.map": "/27club/static/js/2.c5ea1dde.chunk.js.map",
+    "static/js/2.4eded619.chunk.js": "/27club/static/js/2.4eded619.chunk.js",
+    "static/js/2.4eded619.chunk.js.map": "/27club/static/js/2.4eded619.chunk.js.map",
     "static/js/3.c736e2f9.chunk.js": "/27club/static/js/3.c736e2f9.chunk.js",
     "static/js/3.c736e2f9.chunk.js.map": "/27club/static/js/3.c736e2f9.chunk.js.map",
     "index.html": "/27club/index.html",
     "static/css/main.56ec0715.chunk.css.map": "/27club/static/css/main.56ec0715.chunk.css.map",
-    "static/js/2.c5ea1dde.chunk.js.LICENSE.txt": "/27club/static/js/2.c5ea1dde.chunk.js.LICENSE.txt",
+    "static/js/2.4eded619.chunk.js.LICENSE.txt": "/27club/static/js/2.4eded619.chunk.js.LICENSE.txt",
     "static/media/index.css": "/27club/static/media/Oswald-SemiBold.031050ad.ttf",
     "static/media/amy-winehouse.cdab2ec9.jpg": "/27club/static/media/amy-winehouse.cdab2ec9.jpg",
     "static/media/brian-jones.1635a2da.jpg": "/27club/static/media/brian-jones.1635a2da.jpg",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a8918f10.js",
-    "static/js/2.c5ea1dde.chunk.js",
+    "static/js/2.4eded619.chunk.js",
     "static/css/main.56ec0715.chunk.css",
-    "static/js/main.c1c30d56.chunk.js"
+    "static/js/main.669f58d0.chunk.js"
   ]
 }
