@@ -7,7 +7,7 @@ function About() {
       <article className="about__info section" id="about">
         <h2 className="about__title">О клубе</h2>
         <p className="about__text">
-          Объединённое название влиятельных музыкантов, умерших
+          Клуб 27 — объединённое название влиятельных музыкантов, умерших
           в возрасте 27 лет, иногда при странно сложившихся обстоятельствах.
         </p>
         <p className="about__text">
