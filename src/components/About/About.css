@@ -40,3 +40,29 @@
 .about__text:last-child {
   margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .about__title {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .about__title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__text {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .about__text {
+    font-size: 18px;
+  }
+}
