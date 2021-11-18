@@ -24,11 +24,12 @@ function App() {
           <Main />
           <Footer />
         </Route>
-        <Route path="*">
+        <Route>
           <Helmet
-            title="Страница не найдена"
+            title="2Страница не найдена"
           />
           <PageNotFound
+            path="*"
             handleGoBack={handleGoBack}
           />
         </Route>
