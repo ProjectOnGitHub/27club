@@ -12,7 +12,7 @@ function Members() {
       return {
         id: item.id,
         name: item.name,
-        link: item.link,
+        image: item.image,
         dates: item.dates,
       }
     })
@@ -30,7 +30,7 @@ function Members() {
             <Card
               key={card.id}
               name={card.name}
-              link={card.link}
+              image={card.image}
               dates={card.dates}
               card={card}
             />

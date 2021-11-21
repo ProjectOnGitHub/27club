@@ -11,22 +11,30 @@ function App() {
   const history = useHistory();
   function handleGoBack() {
     history.goBack();
-
   }
+
+
   return (
     <div className="app">
+      <Header
+        exact path={["/", "/jimi-hendrix"]}
+      />
       <Switch>
         <Route exact path="/">
           <Helmet
             title="Клуб 27"
           />
-          <Header />
           <Main />
-          <Footer />
+        </Route>
+        <Route path="/jimi-hendrix">
+          <Helmet
+            title="Джими Хендрикс"
+          />
+          <Main />
         </Route>
         <Route>
           <Helmet
-            title="2Страница не найдена"
+            title="Страница не найдена"
           />
           <PageNotFound
             path="*"
@@ -34,6 +42,9 @@ function App() {
           />
         </Route>
       </Switch>
+      <Footer
+        exact path={["/", "/jimi-hendrix"]}
+      />
     </div>
   );
 }

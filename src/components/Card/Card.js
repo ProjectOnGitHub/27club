@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Card.css';
 
 // eslint-disable-next-line react/prop-types
-function Card({ card, name, dates, link }) {
+function Card({ card, name, dates, image }) {
   const [hoverCard, setHoverCard] = useState(false);
 
   function handleMouseEnter() {
@@ -29,7 +29,7 @@ function Card({ card, name, dates, link }) {
       ) : (
         <h4 className="members-cards__subtitle">{dates}</h4>
       )}
-      <img className="members-cards__image" src={link} alt={name} />
+      <img className="members-cards__image" src={image} alt={name} />
     </li>
 
   );
