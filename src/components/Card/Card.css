@@ -15,7 +15,21 @@
   position: relative;
   justify-content: center;
   transition: 1s;
+}
+
+.members-cards__list-link {
+  color: var(--color-light);
   filter: none;
+}
+
+.members-cards__list-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: 1s ease-in-out;
 }
 
 .members-cards__title {
@@ -41,7 +55,7 @@
   height: 100%;
 }
 
-.members-cards__list-item:hover {
+.members-cards__list-link:hover {
   filter: grayscale(100%);
   transition: 1s;
 }

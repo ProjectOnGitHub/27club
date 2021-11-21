@@ -23,15 +23,19 @@ function Card({ card, name, dates, image }) {
 
 
   return (
-    <li className="members-cards__list-item" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
-      {!hoverCard ? (
-        <h3 className="members-cards__title">{name}</h3>
-      ) : (
-        <h4 className="members-cards__subtitle">{dates}</h4>
-      )}
-      <img className="members-cards__image" src={image} alt={name} />
-    </li>
+    <a href="/jimi-hendrix" className="members-cards__list-link">
+      <li className="members-cards__list-item" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+        {!hoverCard ? (
+          <h3 className="members-cards__title">{name}</h3>
+        ) : (
+          <>
+            <h4 className="members-cards__subtitle">{dates}</h4>
+          </>
+        )}
+        <img className="members-cards__image" src={image} alt={name} />
 
+      </li>
+    </a>
   );
 }
 
