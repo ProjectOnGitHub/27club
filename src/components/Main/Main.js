@@ -12,12 +12,16 @@ function Main() {
   return (
     <main className="main">
       {location.pathname === '/jimi-hendrix' ? (
-        <Members />
+        <About
+          aboutTitle="Джими Хендрикс"
+        />
       ) : (
         <>
           <Promo />
           <Members />
-          <About />
+          <About
+            aboutTitle="О клубе"
+          />
         </>
       )}
     </main>

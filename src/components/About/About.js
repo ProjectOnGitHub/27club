@@ -1,11 +1,19 @@
 import React from 'react';
+import { useLocation } from 'react-router';
 import './About.css';
 
-function About() {
+// eslint-disable-next-line react/prop-types
+function About({ aboutTitle }) {
+  let location = useLocation();
   return (
     <section className="about">
       <article className="about__info section" id="about">
-        <h2 className="about__title">О клубе</h2>
+        {location.pathname === "/" ? (
+          <h2 className="about__title">{aboutTitle}</h2>
+        ) : (
+          <h1 className="about__title">{aboutTitle}</h1>
+        )}
+
         <p className="about__text">
           Клуб 27 — объединённое название влиятельных музыкантов, умерших
           в возрасте 27 лет, иногда при странно сложившихся обстоятельствах.
