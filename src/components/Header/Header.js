@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import headerLogo from '../../images/logo.png';
 import './Header.css';
+import HeaderMenu from '../HeaderMenu/HeaderMenu';
 
 function Header() {
   return (
@@ -10,18 +11,7 @@ function Header() {
         <Link to="/" className="header__link hover-effect">
           <img className="header__logo" alt="Логотип" src={headerLogo} />
         </Link>
-        <ul className="header__menu">
-          <li className="header__menu-item">
-            <a href="/#members" className="header__menu-link hover-effect">
-              Участники
-            </a>
-          </li>
-          <li className="header__menu-item">
-            <a href="/#about" className="header__menu-link hover-effect">
-              О клубе
-            </a>
-          </li>
-        </ul>
+        <HeaderMenu />
       </nav>
     </header >
   );
