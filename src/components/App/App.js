@@ -43,7 +43,7 @@ function App() {
         </Route>
       </Switch>
       <Footer
-        exact path={["/", "/jimi-hendrix"]}
+        exact path={["/"]}
       />
     </div>
   );

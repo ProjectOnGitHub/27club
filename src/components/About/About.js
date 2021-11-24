@@ -3,11 +3,11 @@ import { useLocation } from 'react-router';
 import './About.css';
 
 // eslint-disable-next-line react/prop-types
-function About({ aboutTitle }) {
+function About({ aboutTitle, ankor }) {
   let location = useLocation();
   return (
     <section className="about">
-      <article className="about__info section" id="about">
+      <article className="about__info section" id={ankor}>
         {location.pathname === "/" ? (
           <h2 className="about__title">{aboutTitle}</h2>
         ) : (

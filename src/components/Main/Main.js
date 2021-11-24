@@ -21,6 +21,7 @@ function Main() {
           <Members />
           <About
             aboutTitle="О клубе"
+            ankor="about"
           />
         </>
       )}

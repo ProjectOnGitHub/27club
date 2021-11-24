@@ -34,7 +34,6 @@ function Card({ card, name, dates, image }) {
           </>
         )}
         <img className="members-cards__image" src={image} alt={name} />
-
       </li>
     </Link>
   );
