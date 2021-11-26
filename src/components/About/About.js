@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router';
 import './About.css';
 
 // eslint-disable-next-line react/prop-types
 function About({ aboutTitle, ankor }) {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   let location = useLocation();
   return (
-    <section className="about">
-      <article className="about__info section" id={ankor}>
+    <section className="about" id={ankor}>
+      <article className="about__info section" >
         {location.pathname === "/" ? (
           <h2 className="about__title">{aboutTitle}</h2>
         ) : (
