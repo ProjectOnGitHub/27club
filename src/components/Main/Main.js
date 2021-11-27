@@ -5,7 +5,7 @@ import About from "../About/About";
 import Members from "../Members/Members";
 import './Main.css';
 
-function Main() {
+function Main({ cards }) {
 
   const location = useLocation();
 
@@ -18,7 +18,9 @@ function Main() {
       ) : (
         <>
           <Promo />
-          <Members />
+          <Members
+            cards={cards}
+          />
           <About
             aboutTitle="О клубе"
             ankor="about"

@@ -44,7 +44,8 @@ function App() {
           <Helmet
             title="Клуб 27"
           />
-          <Main />
+          <Main
+            cards={cards} />
         </Route>
         <Route path="/jimi-hendrix">
           <Helmet

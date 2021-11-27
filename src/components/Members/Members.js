@@ -1,26 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Members.css';
-import { initialCards } from '../../utils/cards';
 import Card from '../Card/Card';
 
-function Members() {
-
-  const [cards, setCards] = useState([]);
-
-  useEffect(() => {
-    const data = initialCards.map((item) => {
-      return {
-        id: item.id,
-        name: item.name,
-        image: item.image,
-        dates: item.dates,
-      }
-    })
-    console.log(data);
-    setCards(data);
-  }, []);
-
-
+function Members({ cards }) {
 
   return (
     <section className="members" id="members">

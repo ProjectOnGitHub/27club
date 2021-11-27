@@ -18,12 +18,12 @@ function Header({ cards }) {
           {location.pathname === "/" ? (
             <>
               <li className="header__menu-item">
-                <a href="#members" className="header__menu-link hover-effect">
+                <a href="/#members" className="header__menu-link hover-effect">
                   Участники
                 </a>
               </li>
               <li className="header__menu-item">
-                <a href="#about" className="header__menu-link hover-effect">
+                <a href="/#about" className="header__menu-link hover-effect">
                   О клубе
                 </a>
               </li>
