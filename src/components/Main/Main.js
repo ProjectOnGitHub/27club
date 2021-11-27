@@ -14,6 +14,7 @@ function Main({ cards }) {
       {location.pathname === '/jimi-hendrix' ? (
         <About
           aboutTitle="Джими Хендрикс"
+          cards={cards}
         />
       ) : (
         <>

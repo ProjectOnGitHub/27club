@@ -2,7 +2,7 @@
   font-size: 18px;
   text-transform: uppercase;
   display: flex;
-  gap: 30px;
+  gap: 10px;
   margin: 0;
   padding: 0;
 }
@@ -23,11 +23,5 @@
 @media screen and (max-width: 768px) {
   .header__menu {
     gap: 20px;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .header__menu {
-    gap: 15px;
   }
 }
