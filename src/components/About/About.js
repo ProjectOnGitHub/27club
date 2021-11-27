@@ -5,9 +5,11 @@ import './About.css';
 // eslint-disable-next-line react/prop-types
 function About({ aboutTitle, ankor }) {
 
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
 
   let location = useLocation();
   return (
