@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Promo from "../Promo/Promo";
 import About from "../About/About";
+import AboutMember from '../AboutMember/AboutMember';
 import Members from "../Members/Members";
 import './Main.css';
 
@@ -15,7 +16,7 @@ function Main({ cards }) {
         cards.map(item => {
           return (
             <>
-              <About
+              <AboutMember
                 key={item.id}
                 name={item.name}
                 url={item.url}
@@ -35,8 +36,6 @@ function Main({ cards }) {
           <About
             name="О клубе"
             anchor="about"
-            location={location}
-
           />
         </>
       )}
