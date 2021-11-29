@@ -47,11 +47,12 @@ function App() {
           <Main
             cards={cards} />
         </Route>
-        <Route path="/jimi-hendrix">
-          <Helmet
-            title="Джими Хендрикс"
+        <Route
+          exact path="/:id"
+        >
+          <Main
+            cards={cards}
           />
-          <Main />
         </Route>
         <Route>
           <Helmet
@@ -66,7 +67,7 @@ function App() {
       <Footer
         exact path={["/", "/jimi-hendrix"]}
       />
-    </div>
+    </div >
   );
 }
 

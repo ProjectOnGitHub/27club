@@ -11,11 +11,21 @@ function Main({ cards }) {
 
   return (
     <main className="main">
-      {location.pathname === '/jimi-hendrix' ? (
-        <About
-          aboutTitle="Джими Хендрикс"
-          cards={cards}
-        />
+      {location.pathname !== '/' ? (
+        cards.map(item => {
+          return (
+            <>
+              <About
+                key={item.id}
+                name={item.name}
+                url={item.url}
+                image={item.image}
+                location={location}
+              />
+            </>
+
+          )
+        })
       ) : (
         <>
           <Promo />
@@ -23,8 +33,10 @@ function Main({ cards }) {
             cards={cards}
           />
           <About
-            aboutTitle="О клубе"
-            ankor="about"
+            name="О клубе"
+            anchor="about"
+            location={location}
+
           />
         </>
       )}
