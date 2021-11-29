@@ -14,6 +14,7 @@ function Members({ cards }) {
               name={card.name}
               image={card.image}
               dates={card.dates}
+              url={card.url}
               card={card}
             />
           )

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Card.css';
 
 // eslint-disable-next-line react/prop-types
-function Card({ card, name, dates, image }) {
+function Card({ card, name, dates, image, url }) {
   const [hoverCard, setHoverCard] = useState(false);
 
   function handleMouseEnter() {
@@ -24,7 +24,7 @@ function Card({ card, name, dates, image }) {
 
 
   return (
-    <Link to="/jimi-hendrix" className="members-cards__list-link">
+    <Link to={`/${url}`} className="members-cards__list-link">
       <li className="members-cards__list-item" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
         {!hoverCard ? (
           <h3 className="members-cards__title">{name}</h3>
