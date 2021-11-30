@@ -21,6 +21,7 @@ function Main({ cards }) {
                 name={item.name}
                 url={item.url}
                 image={item.image}
+                text={item.text}
                 location={location}
               />
             </>

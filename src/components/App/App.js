@@ -19,6 +19,7 @@ function App() {
         image: item.image,
         url: item.url,
         dates: item.dates,
+        text: item.text,
       }
     })
     console.log(data);

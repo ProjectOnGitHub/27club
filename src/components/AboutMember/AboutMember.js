@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import Helmet from "react-helmet"
-//import './AboutMember.css';
+import Helmet from "react-helmet";
+//import AboutText from '../AboutText/AboutText';
 
-function AboutMember({ name, location, url, image }) {
+function AboutMember({ name, location, url, image, text }) {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -16,7 +16,12 @@ function AboutMember({ name, location, url, image }) {
           <section className="about">
             <article className="about__info section" >
               <h1 className="about__title">{name}</h1>
-              <img src={image} alt={name} />
+              <img className="about__photo" src={image} alt={name} />
+              {text.map((item, i) => {
+                return (
+                  <p className="about__text" key={i + 1}>{item}</p>
+                )
+              })}
             </article>
           </section>
         </>
