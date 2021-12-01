@@ -7,7 +7,6 @@ function About({ name, anchor }) {
     window.scrollTo(0, 0)
   }, [])
 
-
   return (
     <section className="about" id={anchor}>
       <article className="about__info section" >
