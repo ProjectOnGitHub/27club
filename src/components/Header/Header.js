@@ -3,10 +3,16 @@ import { Link, useLocation } from 'react-router-dom';
 import headerLogo from '../../images/logo.png';
 import './Header.css';
 import HeaderMenu from '../HeaderMenu/HeaderMenu';
+import { useMediaQuery } from 'react-responsive';
+
 
 
 function Header({ cards }) {
   let location = useLocation();
+
+  const isMobile = useMediaQuery({
+    query: '(max-width: 1024px)'
+  })
 
   return (
     <header className="header">
@@ -28,16 +34,22 @@ function Header({ cards }) {
                 </a>
               </li>
             </>
-          ) : (cards.map(card => {
-            return (
-              <HeaderMenu
-                key={card.id}
-                name={card.name}
-                image={card.image}
-                url={card.url}
-              />
-            )
-          })
+          ) : (
+            cards.map(card => {
+              if (isMobile) {
+                return (
+                  console.log("бургер меню")
+                )
+              }
+              return (
+                <HeaderMenu
+                  key={card.id}
+                  name={card.name}
+                  image={card.image}
+                  url={card.url}
+                />
+              )
+            })
           )
           }
         </ul>
