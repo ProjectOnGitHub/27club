@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Helmet from "react-helmet";
-//import AboutText from '../AboutText/AboutText';
+import './AboutMember.css';
+
 
 function AboutMember({ name, location, url, image, text }) {
   useEffect(() => {

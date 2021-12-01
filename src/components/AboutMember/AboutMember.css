@@ -1,0 +1,18 @@
+.about__photo {
+  width: 100%;
+  max-height: 600px;
+  margin-bottom: 50px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .about__photo {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .about__photo {
+    margin-bottom: 30px;
+  }
+}
