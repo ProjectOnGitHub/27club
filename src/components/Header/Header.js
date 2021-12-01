@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import headerLogo from '../../images/logo.png';
@@ -11,6 +11,16 @@ import { useMediaQuery } from 'react-responsive';
 
 
 function Header({ cards }) {
+
+  const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
+
+  function closeBurgerMenu() {
+    setIsBurgerMenuOpen(false);
+  }
+  function handleBurgerMenuClick() {
+    setIsBurgerMenuOpen(true);
+  }
+
   const location = useLocation();
   const isMobile = useMediaQuery({
     query: '(max-width: 1024px)'
@@ -27,7 +37,12 @@ function Header({ cards }) {
         {location.pathname === '/'
           ? <HeaderMenu cards={cards} />
           : isMobile
-            ? <BurgerMenu cards={cards} />
+            ? <BurgerMenu
+              cards={cards}
+              isOpen={isBurgerMenuOpen}
+              onClose={closeBurgerMenu}
+              onBurgerMenuClick={handleBurgerMenuClick}
+            />
             : <HeaderMenu cards={cards} />
         }
       </nav>

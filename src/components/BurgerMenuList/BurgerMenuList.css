@@ -1,0 +1,12 @@
+.burger__menu-item {
+  text-transform: uppercase;
+}
+
+.burger__menu-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.burger__menu-link_active {
+  text-decoration: underline;
+}
