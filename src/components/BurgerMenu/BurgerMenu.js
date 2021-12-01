@@ -32,6 +32,7 @@ function BurgerMenu({ cards, onClose, isOpen, onBurgerMenuClick }) {
               name={card.name}
               image={card.image}
               url={card.url}
+              onClose={onClose}
             />
           )
         })}
