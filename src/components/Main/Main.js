@@ -13,19 +13,18 @@ function Main({ cards }) {
   return (
     <main className="main">
       {location.pathname !== '/' ? (
-        cards.map(item => {
+        cards.map(card => {
           return (
             <>
               <AboutMember
-                key={item.id}
-                name={item.name}
-                url={item.url}
-                image={item.image}
-                text={item.text}
+                key={card.id}
+                name={card.name}
+                url={card.url}
+                image={card.image}
+                text={card.text}
                 location={location}
               />
             </>
-
           )
         })
       ) : (
