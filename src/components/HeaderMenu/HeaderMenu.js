@@ -2,19 +2,19 @@ import React from 'react';
 import HeaderMenuList from '../HeaderMenuList/HeaderMenuList';
 import './HeaderMenu.css';
 
-function HeaderMenu({ cards }) {
+function HeaderMenu({ cards, isMobile }) {
 
   return (
     <ul className="header__menu">
       {location.pathname === "/" ? (
         <>
           <li className="header__menu-item">
-            <a href="#members" className="header__menu-link hover-effect">
+            <a href="#members" className={`header__menu-link  ${isMobile ? '' : 'hover-effect'}`}>
               Участники
             </a>
           </li>
           <li className="header__menu-item">
-            <a href="#about" className="header__menu-link hover-effect">
+            <a href="#about" className={`header__menu-link  ${isMobile ? '' : 'hover-effect'}`}>
               О клубе
             </a>
           </li>

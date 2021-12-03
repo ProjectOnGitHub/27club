@@ -7,9 +7,6 @@ import HeaderMenu from '../HeaderMenu/HeaderMenu';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import { useMediaQuery } from 'react-responsive';
 
-
-
-
 function Header({ cards }) {
 
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
@@ -29,11 +26,14 @@ function Header({ cards }) {
   return (
     <header className="header">
       <nav className="header__navigation section">
-        <Link to="/" className="header__link hover-effect">
+        <Link to="/" className={`header__link ${isMobile ? '' : 'hover-effect'}`}>
           <img className="header__logo" alt="Логотип" src={headerLogo} />
         </Link>
         {location.pathname === '/'
-          ? <HeaderMenu cards={cards} />
+          ? <HeaderMenu
+            cards={cards}
+            isMobile={isMobile}
+          />
           : isMobile
             ? <BurgerMenu
               cards={cards}

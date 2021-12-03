@@ -9,14 +9,14 @@ function BurgerMenu({ cards, onClose, isOpen, onBurgerMenuClick }) {
       {isOpen ?
         (
           <button
-            className="burger__menu-button burger__menu-button_close hover-effect"
+            className="burger__menu-button burger__menu-button_close"
             type="button"
             aria-label="Скрыть меню"
             aria-controls="menu"
             onClick={onClose} />
         ) : (
           <button
-            className="burger__menu-button burger__menu-button_open hover-effect"
+            className="burger__menu-button burger__menu-button_open"
             type="button"
             aria-label="Показать меню"
             aria-controls="menu"
