@@ -8,9 +8,11 @@ import PageNotFound from '../PageNotFound/PageNotFound';
 import './App.css';
 import { initialCards } from '../../utils/cards';
 
-
 function App() {
+
   const [cards, setCards] = useState([]);
+  const history = useHistory();
+
   useEffect(() => {
     const data = initialCards.map((item) => {
       return {
@@ -26,13 +28,9 @@ function App() {
     setCards(data);
   }, []);
 
-  const history = useHistory();
   function handleGoBack() {
     history.goBack();
   }
-
-
-
 
   return (
     <div className="app">

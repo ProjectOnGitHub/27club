@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-//import Helmet from "react-helmet"
 import './About.css';
 
 function About({ name, anchor }) {
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -17,12 +17,7 @@ function About({ name, anchor }) {
         <p className="about__text">Затем в Клуб был включён Курт Кобейн, застрелившийся в 1994 году на пике популярности.</p><p className="about__text">После смерти в 2011 году британской певицы Эми Уайнхаус её причислили к Клубу многие издания.</p>
       </article>
     </section>
-
-
   );
 }
 
 export default About;
-
-
-

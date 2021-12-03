@@ -25,6 +25,3 @@ function Members({ cards }) {
 }
 
 export default Members;
-
-
-

@@ -3,6 +3,7 @@ import promoLogo from '../../images/promo-logo.png';
 import './Promo.css';
 
 function Promo() {
+
   return (
     <section className="promo">
       <h1 className="promo__title">Клуб 27</h1>
@@ -12,6 +13,3 @@ function Promo() {
 }
 
 export default Promo;
-
-
-

@@ -1,8 +1,6 @@
 import React from 'react';
 import BurgerMenuList from '../BurgerMenuList/BurgerMenuList';
-//import { NavLink } from 'react-router-dom';
 import './BurgerMenu.css';
-
 
 function BurgerMenu({ cards, onClose, isOpen, onBurgerMenuClick }) {
 

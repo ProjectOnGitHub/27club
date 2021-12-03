@@ -2,8 +2,8 @@ import React from 'react';
 import './PageNotFound.css';
 import { Link } from 'react-router-dom';
 
-// eslint-disable-next-line react/prop-types
 function PageNotFound({ handleGoBack }) {
+
   return (
     <main className="page-not-found">
       <div className="page-not-found__content">

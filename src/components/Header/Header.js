@@ -13,20 +13,18 @@ import { useMediaQuery } from 'react-responsive';
 function Header({ cards }) {
 
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
-
-  function closeBurgerMenu() {
-    setIsBurgerMenuOpen(false);
-  }
-  function handleBurgerMenuClick() {
-    setIsBurgerMenuOpen(true);
-  }
-
   const location = useLocation();
   const isMobile = useMediaQuery({
     query: '(max-width: 1024px)'
   })
 
+  function closeBurgerMenu() {
+    setIsBurgerMenuOpen(false);
+  }
 
+  function handleBurgerMenuClick() {
+    setIsBurgerMenuOpen(true);
+  }
 
   return (
     <header className="header">
@@ -51,6 +49,3 @@ function Header({ cards }) {
 }
 
 export default Header;
-
-
-

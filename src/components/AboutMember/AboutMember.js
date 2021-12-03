@@ -4,6 +4,7 @@ import './AboutMember.css';
 
 
 function AboutMember({ name, location, url, image, text }) {
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])

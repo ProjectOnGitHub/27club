@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Card.css';
 
-// eslint-disable-next-line react/prop-types
 function Card({ card, name, dates, image, url }) {
+
   const [hoverCard, setHoverCard] = useState(false);
 
   function handleMouseEnter() {
@@ -22,16 +22,13 @@ function Card({ card, name, dates, image, url }) {
     handleMouseLeave(card);
   }
 
-
   return (
     <Link to={`/${url}`} className="members-cards__list-link">
       <li className="members-cards__list-item" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
         {!hoverCard ? (
           <h3 className="members-cards__title">{name}</h3>
         ) : (
-          <>
-            <h4 className="members-cards__subtitle">{dates}</h4>
-          </>
+          <h4 className="members-cards__subtitle">{dates}</h4>
         )}
         <img className="members-cards__image" src={image} alt={name} />
       </li>
@@ -40,6 +37,3 @@ function Card({ card, name, dates, image, url }) {
 }
 
 export default Card;
-
-
-

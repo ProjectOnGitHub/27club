@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './BurgerMenuList.css';
 
-
 function BurgerMenuList({ name, url, onClose }) {
 
   return (
@@ -19,6 +18,3 @@ function BurgerMenuList({ name, url, onClose }) {
 }
 
 export default BurgerMenuList;
-
-
-
