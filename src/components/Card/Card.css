@@ -10,7 +10,7 @@
 .members-cards__list-item {
   width: 100%;
   display: flex;
-  max-height: 400px;
+  max-height: 500px;
   height: 100%;
   align-items: center;
   position: relative;
