@@ -41,35 +41,17 @@ function App() {
           <Main cards={cards} />
           <Footer />
         </Route>
-        <Route exact path={
-          ["/robert-johnson",
-            "/brian-jones",
-            "/jimi-hendrix",
-            "/janis-joplin",
-            "/jim-morrison",
-            "/kurt-cobain",
-            "/amy-winehouse",
-          ]}>
-
-        <Route exact path={
-      ["/robert-johnson",
-        "/brian-jones",
-        "/jimi-hendrix",
-        "/janis-joplin",
-        "/jim-morrison",
-        "/kurt-cobain",
-        "/amy-winehouse",
-      ]}>
-        <Header cards={cards} />
-        <Main cards={cards} />
-        <Footer />
+        <Route exact path={cards.map(card => `/${card.url}`)}>
+          <Header cards={cards} />
+          <Main cards={cards} />
+          <Footer />
         </Route>
-        <Route path="*">
-        <Helmet title="Страница не найдена" />
-        <PageNotFound handleGoBack={handleGoBack} />
+        <Route path="">
+          <Helmet title="Страница не найдена" />
+          <PageNotFound handleGoBack={handleGoBack} />
         </Route>
       </Switch>
-    </div>
+    </div >
   );
 }
 
