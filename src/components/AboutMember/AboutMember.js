@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Helmet from "react-helmet";
 import './AboutMember.css';
 
-
 function AboutMember({ name, location, url, image, text }) {
 
   useEffect(() => {
@@ -28,7 +27,7 @@ function AboutMember({ name, location, url, image, text }) {
           </section>
         </>
       ) : (
-        ""
+        ''
       )
       }
     </>

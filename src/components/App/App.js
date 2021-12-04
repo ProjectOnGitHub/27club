@@ -34,39 +34,42 @@ function App() {
 
   return (
     <div className="app">
-      <Header
-        exact path={["/", "/jimi-hendrix"]}
-        cards={cards}
-      />
       <Switch>
         <Route exact path="/">
-          <Helmet
-            title="Клуб 27"
-          />
-          <Main
-            cards={cards} />
+          <Header />
+          <Helmet title="Клуб 27" />
+          <Main cards={cards} />
+          <Footer />
         </Route>
-        <Route
-          exact path="/:id"
-        >
-          <Main
-            cards={cards}
-          />
+        <Route exact path={
+          ["/robert-johnson",
+            "/brian-jones",
+            "/jimi-hendrix",
+            "/janis-joplin",
+            "/jim-morrison",
+            "/kurt-cobain",
+            "/amy-winehouse",
+          ]}>
+
+        <Route exact path={
+      ["/robert-johnson",
+        "/brian-jones",
+        "/jimi-hendrix",
+        "/janis-joplin",
+        "/jim-morrison",
+        "/kurt-cobain",
+        "/amy-winehouse",
+      ]}>
+        <Header cards={cards} />
+        <Main cards={cards} />
+        <Footer />
         </Route>
-        <Route>
-          <Helmet
-            title="Страница не найдена"
-          />
-          <PageNotFound
-            path="*"
-            handleGoBack={handleGoBack}
-          />
+        <Route path="*">
+        <Helmet title="Страница не найдена" />
+        <PageNotFound handleGoBack={handleGoBack} />
         </Route>
       </Switch>
-      <Footer
-        exact path={["/", "/jimi-hendrix"]}
-      />
-    </div >
+    </div>
   );
 }
 
