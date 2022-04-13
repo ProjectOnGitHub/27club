@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/27club/static/css/main.5ca15934.chunk.css",
-    "main.js": "/27club/static/js/main.9f4af512.chunk.js",
-    "main.js.map": "/27club/static/js/main.9f4af512.chunk.js.map",
-    "runtime-main.js": "/27club/static/js/runtime-main.8b4bb6e9.js",
-    "runtime-main.js.map": "/27club/static/js/runtime-main.8b4bb6e9.js.map",
-    "static/js/2.a4cd2646.chunk.js": "/27club/static/js/2.a4cd2646.chunk.js",
-    "static/js/2.a4cd2646.chunk.js.map": "/27club/static/js/2.a4cd2646.chunk.js.map",
-    "static/js/3.6e5834b9.chunk.js": "/27club/static/js/3.6e5834b9.chunk.js",
-    "static/js/3.6e5834b9.chunk.js.map": "/27club/static/js/3.6e5834b9.chunk.js.map",
+    "main.css": "/27club/static/css/main.aae0b8f7.chunk.css",
+    "main.js": "/27club/static/js/main.91e283b4.chunk.js",
+    "main.js.map": "/27club/static/js/main.91e283b4.chunk.js.map",
+    "runtime-main.js": "/27club/static/js/runtime-main.43fb89a4.js",
+    "runtime-main.js.map": "/27club/static/js/runtime-main.43fb89a4.js.map",
+    "static/js/2.69aff8c0.chunk.js": "/27club/static/js/2.69aff8c0.chunk.js",
+    "static/js/2.69aff8c0.chunk.js.map": "/27club/static/js/2.69aff8c0.chunk.js.map",
+    "static/js/3.0c7d7cf9.chunk.js": "/27club/static/js/3.0c7d7cf9.chunk.js",
+    "static/js/3.0c7d7cf9.chunk.js.map": "/27club/static/js/3.0c7d7cf9.chunk.js.map",
     "index.html": "/27club/index.html",
-    "static/css/main.5ca15934.chunk.css.map": "/27club/static/css/main.5ca15934.chunk.css.map",
-    "static/js/2.a4cd2646.chunk.js.LICENSE.txt": "/27club/static/js/2.a4cd2646.chunk.js.LICENSE.txt",
+    "static/css/main.aae0b8f7.chunk.css.map": "/27club/static/css/main.aae0b8f7.chunk.css.map",
+    "static/js/2.69aff8c0.chunk.js.LICENSE.txt": "/27club/static/js/2.69aff8c0.chunk.js.LICENSE.txt",
     "static/media/index.css": "/27club/static/media/Oswald-SemiBold.51bef50f.woff",
     "static/media/amy-winehouse.c6503ff9.jpg": "/27club/static/media/amy-winehouse.c6503ff9.jpg",
     "static/media/brian-jones.1c30b7c3.jpg": "/27club/static/media/brian-jones.1c30b7c3.jpg",
@@ -24,9 +24,9 @@
     "static/media/robert-johnson.1a98d05f.jpg": "/27club/static/media/robert-johnson.1a98d05f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8b4bb6e9.js",
-    "static/js/2.a4cd2646.chunk.js",
-    "static/css/main.5ca15934.chunk.css",
-    "static/js/main.9f4af512.chunk.js"
+    "static/js/runtime-main.43fb89a4.js",
+    "static/js/2.69aff8c0.chunk.js",
+    "static/css/main.aae0b8f7.chunk.css",
+    "static/js/main.91e283b4.chunk.js"
   ]
 }
