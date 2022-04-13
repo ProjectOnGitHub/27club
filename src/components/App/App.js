@@ -4,14 +4,14 @@ import Helmet from "react-helmet"
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
-import PageNotFound from '../PageNotFound/PageNotFound';
+//import PageNotFound from '../PageNotFound/PageNotFound';
 import './App.css';
 import { initialCards } from '../../utils/cards';
 
 function App() {
 
   const [cards, setCards] = useState([]);
-  const history = useHistory();
+  //const history = useHistory();
 
   useEffect(() => {
     const data = initialCards.map((item) => {
@@ -28,9 +28,9 @@ function App() {
     setCards(data);
   }, []);
 
-  function handleGoBack() {
-    history.goBack();
-  }
+  // function handleGoBack() {
+  //   history.goBack();
+  // }
 
   return (
     <div className="app">
@@ -46,10 +46,10 @@ function App() {
           <Main cards={cards} />
           <Footer />
         </Route>
-        <Route path="">
+        {/* <Route path="">
           <Helmet title="Страница не найдена" />
           <PageNotFound handleGoBack={handleGoBack} />
-        </Route>
+        </Route> */}
       </Switch>
     </div >
   );
