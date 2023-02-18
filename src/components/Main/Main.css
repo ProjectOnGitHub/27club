@@ -6,8 +6,9 @@
     "members"
     "about";
   grid-template-columns: 1fr;
-  width: 100%;
-  margin: 0;
   justify-content: center;
   justify-items: center;
+  width: 100%;
+  margin: 0;
+  background-color: var(--color-dark);
 }

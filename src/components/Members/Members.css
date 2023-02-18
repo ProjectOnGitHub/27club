@@ -1,20 +1,21 @@
 .members {
-  grid-area: members;
   display: flex;
+  grid-area: members;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-dark);
-  height: 100%;
   width: 100%;
+  max-width: 1600px;
+  height: 100%;
+  background-color: var(--color-dark);
 }
 
 .members__title {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 200px;
-  text-decoration: underline;
-  font-weight: bold;
-  color: #fff;
   z-index: 1;
   margin: 0;
+  font-weight: bold;
+  font-size: 200px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
