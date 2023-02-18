@@ -21,7 +21,7 @@
 
 .members-cards__list-link {
   color: var(--color-light);
-  filter: none;
+  filter: grayscale(100%);
 }
 
 .members-cards__list-link::before {
@@ -57,6 +57,6 @@
 }
 
 .members-cards__list-link:hover {
-  filter: grayscale(100%);
   transition: 1s;
+  filter: none;
 }
